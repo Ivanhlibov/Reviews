@@ -10,7 +10,7 @@ class App extends Component{
 handlefeedback = (type) => {
     this.setState(prevState => ({
         [type]: prevState[type] + 1
-    }))
+    }));
 }
 
 render(){
@@ -21,13 +21,13 @@ render(){
         <button onClick={()=> this.handlefeedback('good')} >good</button>
         <button onClick={()=> this.handlefeedback('neytral')} >neytral</button>
         <button onClick={()=> this.handlefeedback('bad')} >bad</button>
-        <h2>У тебя все получиться</h2>
-        <p>Добре {good}</p>
-        <p>Нейтрально {neytral}</p>
-        <p>Добре {bad}</p>
+        <h2>У тебя все получиться!</h2>
+        <p>Добре: {good}</p>
+        <p>Нейтрально: {neytral}</p>
+        <p>Добре: {bad}</p>
         </div>
     )
-}
+  }
 }
 
 
